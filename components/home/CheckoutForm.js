@@ -8,20 +8,21 @@ function CheckoutForm({amount}) {
     const handleSubmit = async(event)=>{
         event.preventDefault();
         if(elements==null)
-            {
-            return;
+        {
+            return ;
         }
         const {error:submitError}=await elements.submit();
         if(submitError)
         {
-            return;
+            return ;
         }
         const res=await fetch('/api/create-intent',{
             method:'POST',
             body:JSON.stringify({
                 amount:amount
             })
-        })
+        });
+
         const secretKey=await res.json();
         console.log(secretKey);
 
