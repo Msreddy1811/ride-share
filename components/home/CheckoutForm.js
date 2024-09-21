@@ -30,7 +30,7 @@ function CheckoutForm({amount}) {
             clientSecret:secretKey,
             elements,
             confirmParams:{
-                return_url:"http://localhost:3000/"
+                return_url:"http://https://ride-shr.vercel.app/Payment Conform"
             }
         })
         }

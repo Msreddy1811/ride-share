@@ -22,7 +22,7 @@ export default function Home() {
         googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY}>
 
           <div className="relative">
-              <UserButton />
+
 
     <div className='p-6 grid grid-cols-1 md:grid-cols-3 gap-5'>
       <div>

@@ -1,15 +1,14 @@
-import { SignIn } from '@clerk/nextjs'
+// pages/sign-in.js
+import { SignIn } from '@clerk/nextjs';
 import Image from 'next/image';
 
 export default function Page() {
-    return(
-        <>
+    return (
         <div>
-            <Image src='/gshd.jpeg' width={900} height={1000} className="object-contain h-full w-full"/>
+            <Image src='/gshd.jpeg' width={900} height={1000} className="object-contain h-full w-full" />
             <div className="absolute top-20 right-6">
-            <SignIn />
+                <SignIn />
             </div>
         </div>
-        </>
     );
 }
